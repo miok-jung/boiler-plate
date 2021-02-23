@@ -6,3 +6,7 @@ yarn run start
 MongoDB 연결
 - yarn run start에 대한 오류로 인해 mongodb패키지 추가 및 mongoose다운그레이 진행하여 오류는 없음
 - 콘솔창에 db연결이 잘되었는지 확인여부가 안되는 상황
+
+21. 02. 23
+MongoDB Model & Schema
+- Model과 Schema에 대한 정리
