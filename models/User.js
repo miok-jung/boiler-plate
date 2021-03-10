@@ -39,4 +39,4 @@ const userSchema = mongoose.Schema({ // 스키마 생성
 const User = mongoose.model('User', userSchema)
 
 // 모델을 다른 파일에서도 쓸 수 있게 설정
-module.export = { User }
+module.exports = { User }
