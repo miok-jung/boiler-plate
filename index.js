@@ -17,7 +17,7 @@ mongoose.connect('mongodb+srv://miok:tpzy591@boilerplate.7efpi.mongodb.net/myFir
   .catch(err => console.log(err))
   
 app.get('/', (req, res) => {
-  res.send('Hello World! 안녕하세요')
+  res.send('Hello World! 안녕하세요. 실시간 업데이트!')
 })
 
 app.post('/register', (req, res) => {
