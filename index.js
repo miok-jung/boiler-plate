@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 5000 // 벡서버
 const bodyParser = require('body-parser');
+const config = require('./config/key');
 // app. post값을 하기 위해 user모델을 가져오는 것
 const {User} = require("./models/User");
 
@@ -11,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://miok:tpzy591@boilerplate.7efpi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect(config.mongoURI, {
   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false // 미사용시 에러발생
 }).then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err))

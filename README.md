@@ -29,6 +29,9 @@ SSH : 안전한 통신?Secure Shell
 - yarn run backend 설정완료
 - https://jnarin-development-story.tistory.com/90
 
+6. 210312
+- 비밀설정 정보관리를 통해 좀 더 보완적으로 업로드 가능
+- https://jnarin-development-story.tistory.com/91
 
 
 
