@@ -33,6 +33,10 @@ SSH : 안전한 통신?Secure Shell
 - 비밀설정 정보관리를 통해 좀 더 보완적으로 업로드 가능
 - https://jnarin-development-story.tistory.com/91
 
+7. 210313
+- bcrypt 비밀번호를 암호화하여 받기
+- https://jnarin-development-story.tistory.com/92
+
 
 
 
