@@ -41,5 +41,6 @@ SSH : 안전한 통신?Secure Shell
 - jsonwebtoken, cookie-parser 설치하여 로그인 쿠키 기반으로 토큰 생성하기
 - https://jnarin-development-story.tistory.com/94
 
-
+# 210316
+- Auth 기능 추가하기
 

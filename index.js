@@ -4,6 +4,9 @@ const port = 5000 // 벡서버
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const config = require('./config/key');
+
+// middleware에서 auth가져오기
+const {auth} = require('./middleware/auth');
 // app. post값을 하기 위해 user모델을 가져오는 것
 const {User} = require("./models/User");
 
@@ -26,7 +29,7 @@ app.get('/', (req, res) => {
   res.send('Hello World! 안녕하세요. 실시간 업데이트!')
 })
 
-app.post('/register', (req, res) => {
+app.post('/api/users/register', (req, res) => {
   //회원 가입할 때 필요한 정보들을 client에서 가져오면, 그것들을 데이터 베이스에 넣어준다.
 
   // User을 가져와 instance를 만든다?
@@ -65,6 +68,21 @@ app.post('/login', (req, res) => {
 
       })
     })
+  })
+})
+
+app.get('/api/users/auth', auth, (req, res) => {
+  // 여기까지 미들웨어를 통과해 왔다는 얘기는 Authentication이 True라는 말을 의미한다.
+  res.status(200).json({
+    // 원하는 유저정보를 제공한다.
+    _id: req.user._id,
+    isAdmin: req.user.role === 0 ? false : true, // 관리자와 사용자를 구분한다. role 0이면 일반유저, 0이 아니면 관리자
+    isAuth: true,
+    email: req.user.email,
+    name: req.user.name,
+    lastname: req.user.lastname,
+    role: req.user.role,
+    image: req.user.image
   })
 })
 
