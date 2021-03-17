@@ -17,4 +17,4 @@ let auth = (req, res, next) => {
     //4. 유저가 없으면 인증 불가
 }
 
-module.exports = {auth};
+module.exports = { auth };

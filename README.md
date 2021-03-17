@@ -1,4 +1,5 @@
-React JS, Node JS
+client : React JS
+Server : Node JS, MongoDB
 
 yarn run start
 - package.json에서 script에 의해 node index.js를 실행할 수 있게 설정.
@@ -43,4 +44,8 @@ SSH : 안전한 통신?Secure Shell
 
 # 210316
 - Auth 기능 추가하기
+- https://jnarin-development-story.tistory.com/95
 
+# 210317
+- 로그아웃 기능 추가
+- https://jnarin-development-story.tistory.com/96
