@@ -9,13 +9,12 @@ Server : Node JS, MongoDB
 
 ## 210223
 
-MongoDB Model & Schema
-
+- MongoDB Model & Schema
 - Model과 Schema에 대한 정리
 
 ## 210226
 
-SSH : 안전한 통신?Secure Shell
+- SSH : 안전한 통신?Secure Shell
 
 ## 210310
 
@@ -56,5 +55,12 @@ SSH : 안전한 통신?Secure Shell
 ## 210318
 
 - server, client 구별 및 리액트 폴더 및 파일만 생성
-- react-router-dom 설치, router 설정
-- prettierrc.js 설정
+- react-router-dom 설치
+- prettierrc.js, router 설정
+- https://jnarin-development-story.tistory.com/98
+
+## 210319 ~ 210320
+
+- proxy 설치
+- cors 이슈 해결, shareArrayBuffer warnning 해결
+- https://jnarin-development-story.tistory.com/99
