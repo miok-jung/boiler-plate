@@ -1,3 +1,3 @@
 client : React JS  
 Server : Node JS, MongoDB  
-DATA : 21. 02. 23 ~ 21. 03.
+DATA : 21. 02. 23 ~ 21. 03. 30

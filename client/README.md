@@ -30,3 +30,7 @@
 
 - 회원가입 페이지 구현
 - https://jnarin-development-story.tistory.com/103
+
+## 210330
+
+- 로그아웃, 인증에 따른 페이지 출입여부 변경
