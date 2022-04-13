@@ -14,12 +14,7 @@ app.use(express.json());
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(config.mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false, // 미사용시 에러발생
-  })
+  .connect(config.mongoURI)
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
 
